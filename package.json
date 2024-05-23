@@ -1,11 +1,12 @@
 {
-  "name": "cloudfunction",
+  "name": "activecampaign-proxy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
   }
 }
