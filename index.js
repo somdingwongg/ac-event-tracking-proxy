@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 5000;
+const BASE_URL = process.env.BASE_URL || 'http://localhost';
 
 console.log('Starting application...');
 
@@ -91,6 +92,5 @@ async function getEmailHash(hash) {
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
-    // Log the accessible URL (note: replace "YOUR_COOLIFY_URL" with the actual URL or provide instructions to check the Coolify dashboard)
-    console.log(`Application is accessible at: http://YOUR_COOLIFY_URL:${PORT}`);
+    console.log(`Application is accessible at: ${BASE_URL}:${PORT}`);
 });
