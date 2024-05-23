@@ -89,6 +89,8 @@ async function getEmailHash(hash) {
     });
 }
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
+    // Log the accessible URL (note: replace "YOUR_COOLIFY_URL" with the actual URL or provide instructions to check the Coolify dashboard)
+    console.log(`Application is accessible at: http://YOUR_COOLIFY_URL:${PORT}`);
 });
